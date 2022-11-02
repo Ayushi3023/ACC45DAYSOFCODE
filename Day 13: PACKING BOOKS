@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t--){
+        int x,y,z,i,n;
+        cin>>x>>y>>z;
+        n=(y/z);
+        i=y%z;
+        if(i==0)
+        cout<<x*n<<endl;
+        else
+        cout<<x*(n+1)<<endl;
+        
+    }
+	return 0;
+}
