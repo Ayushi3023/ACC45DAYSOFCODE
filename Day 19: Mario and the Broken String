@@ -1,0 +1,12 @@
+# cook your dish here
+t=int(input())
+for i in range(1,t+1):
+    n=int(input())
+    s=input()
+    s1 = s[0:n//2]
+    s2 = s[n//2:]
+    s3=s2+s1
+    if(s==s3):
+        print("YES")
+    else:
+        print("NO")
