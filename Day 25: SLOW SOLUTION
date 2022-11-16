@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int h,a,b,x,p=0,l;
+        cin>>h>>a>>b;
+        x=b%a;
+        while(b>0&&h>0)
+        {
+            if(b<a)
+            {
+                p+=pow(x,2);
+                break;
+            }
+            b-=a;
+            p+=pow(a,2);
+            h--;
+        }
+        cout<<p<<endl;
+    }
+    return 0;
+}
