@@ -1,0 +1,37 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,i,j;
+	    cin>>n;
+	    int k=2*n;
+	    int a[k];
+	    
+	    for(int i=0;i<k;i++)
+	        cin>>a[i];
+	        
+	   map<int,int>mp;
+	   for(int i=0;i<k;i++)
+	   mp[a[i]]++;
+	   int flag=0;
+	   
+	   for(auto it:mp){
+	       if(it.second>=3){
+	           flag=1;
+	           break;
+	       }
+	   }
+	       if(flag)
+	       cout<<"NO"<<endl;
+	       else
+	       cout<<"YES"<<endl;
+	   }
+	 
+	return 0;
+}
+
