@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,m,k,x;
+	    cin>>n>>m>>k>>x;
+	    int temp = n*k+m;
+	    int w = n*(k-1);
+	    int var = x%temp;
+	    if(var!=0 && (var-w)<=0){
+	        cout<<"NO"<<endl;
+	    }
+        else cout<<"YES"<<endl;
+	}
+	return 0;
+}
